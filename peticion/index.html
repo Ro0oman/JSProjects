@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.cdnfonts.com/css/pokemon-hollow" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.2.js" integrity="sha256-pkn2CUZmheSeyssYw3vMp1+xyub4m+e+QK4sQskvuo4=" crossorigin="anonymous"></script>
+    <style>
+        body{
+            font-family: 'Pokemon Hollow', sans-serif;
+            background: #fff url(./fondo.png) center center/cover no-repeat;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        h1{
+            color: rgb(2, 31, 126);
+            font-size: 60px;
+        }
+
+        .container{
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.815);
+        }
+
+        .contenido{
+            display: flex;
+            flex-direction: row;
+            height: 50hv;
+            margin-top: 40px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.815);
+        }
+
+        .informacion{
+            margin: auto;
+        }
+        
+        .form{
+            display: flex;
+            flex-direction: row;
+        }
+
+        .input{
+            border-radius: 5px;
+            text-align: center;
+            width: 80%;
+        }
+        .form>*{
+            margin: auto;
+        }
+        body>*{
+            margin: auto;
+        }
+        #theImg{
+            width: 50vw;
+            height: 80vh;
+        }
+
+        button{
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador pokemon</h1>
+        <form action="" class="form">
+            <input type="text" class="input" name="parametro" placeholder="Nombre del pokemon">
+            <button onclick="buscar()">Buscar</button>
+        </form>
+    </div>
+    <div class="contenido">
+        <div class="informacion">
+        </div>
+    </div>
+        <script>
+        $(".form").submit(function(e) {
+            e.preventDefault();
+        });
+        function buscar(){
+            $('.contenido').empty();
+            let ruta = "https://pokeapi.co/api/v2/pokemon/";
+            ruta = ruta.concat($('.input').val());
+            console.log(ruta)
+            let respuesta = fetch(ruta)  
+            .then(function(response){
+                return response.json();
+            })
+            .then(function(json){
+                console.log(json);
+                $('.contenido').append('<div class="informacion"></div>');
+                $('.informacion').append('<button id="pixel">Pixelar</>');
+                $('.informacion').append('<button id="emebellecer">Emebellecer</>')
+                $('.contenido').append('<img id="theImg" src="'+json.sprites.other.dream_world.front_default+'" />')
+                $('.contenido').css('border','2px solid black');
+
+                $('#emebellecer').click(function () { 
+                    $('#theImg').remove();
+                    $('.contenido').append('<img id="theImg" src="'+json.sprites.other.dream_world.front_default+'" />')
+                })
+
+                $('#pixel').click(function () { 
+                    $('#theImg').remove();
+                    $('.contenido').append('<img id="theImg" src="'+json.sprites.front_default+'" />')
+                })
+            })
+            .catch((error) => {
+                $('.contenido').prepend('<h1>Pokemon no econtrado :(</h1>');
+                console.error('Error:', error);
+            });
+
+            
+        }
+    </script>
+</body>
+</html>

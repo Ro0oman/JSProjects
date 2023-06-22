@@ -1,0 +1,67 @@
+/* Estilos generales */
+body, html{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    background-color: lightblue;
+}
+
+p{
+    text-align: center;
+    color: white;
+}
+
+.container{
+    margin: auto;
+    background-color: yellow;
+    display: grid;
+    grid-template: repeat(6, 1fr) / repeat(7, 1fr);
+}
+
+.botones{
+    margin: auto;
+    display: flex;
+    flex-direction: row;    
+}
+
+.boton{
+    margin: auto;
+    height: 96px;
+    width: 96px;
+}
+
+.boton:hover{
+    border-radius: 10px;
+}
+
+.casilla{
+    height: 92px;
+    width: 92px;
+    display: flex;
+    border: 2px solid black;
+}
+
+.contenido{
+    margin: auto;
+    border: 2px solid black;
+    background-color: rgb(240, 212, 212);
+    border-radius: 40px;
+    height: 80px;
+    width: 80px;
+}
+
+.informacion{
+    display: flex;
+    margin: auto;
+    width: 90%;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+#info{
+    font-family: 'Courier New', Courier, monospace;
+    margin: auto;
+    color: red;
+    font-size: 20px;
+}

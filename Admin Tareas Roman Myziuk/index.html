@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrador de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+
+    <form>
+        <p>Nombre de la tarea</p>
+        <input type="text" name="nombre" id="nombreTarea" class="tareas">
+    
+        <p>Tiempo estimado de trabajo (En minutos)</p>
+        <input type="text" name="tiempo" id="tiempoestimado" class="tareas">
+
+        <p>Fecha de alta de la tarea</p>
+        <input type="date" name="alta" id="fechaalta" class="tareas">
+
+        <p>Fecha maxima de finalizacion</p>
+        <input type="date" name="finalizacion" id="tiempofinalizacion" class="tareas"> 
+
+        <p>Estado de la tarea:</p>
+        <select id="estados" name="estados" class="tareas">
+          <option value="pendiente">pendiente</option>
+          <option value="en proceso"> en proceso</option>
+          <option value="finalizada">finalizada</option>
+        </select>
+
+        <p>Descripcion de la tarea</p>
+        <input type="text" name="descripcion" id="descripcion" class="tareas">
+
+    </form>
+      <br>
+      <button class="mostrar" onclick="mostrarDatos();">Crear Tarea</button> 
+
+      <table id="tablaTareas">
+        <tr>
+          <td>Nombre Tarea</td>
+          <td >Tiempo Estimado
+              <button value = "0" class="botonOrdenar" onclick="ordenarTiempoEstimado()">
+                <i class="fa fa-angle-down" aria-hidden="true"></i>
+              </button>
+            </td>
+          <td>Fecha Inicio
+            <button value = "0" class="botonOrdenar2" onclick="ordenarFechaAlta()">
+              <i class="fa fa-angle-down" aria-hidden="true"></i>
+            </button>
+          </td>
+          <td>Fecha Finalizacion</td>
+          <td>Estado Tarea</td>
+        </tr>
+      </table>
+    </form>
+    
+    <script src="./script.js"></script>
+</body>
+</html>

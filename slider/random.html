@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var slider = document.createElement('div');
+slider.style.width = '300px';
+slider.style.height = '300px';
+slider.style.overflow = 'hidden';
+slider.style.position = 'relative';
+var image1 = document.createElement('img');
+image1.src = 'http://www.w3schools.com/css/img_fjords.jpg';
+image1.style.position = 'absolute';
+image1.style.left = '0px';
+var image2 = document.createElement('img');
+image2.src = 'http://www.w3schools.com/css/img_lights.jpg';
+image2.style.position = 'absolute';
+image2.style.left = '300px';
+var image3 = document.createElement('img');
+image3.src = 'http://www.w3schools.com/css/img_mountains.jpg';
+image3.style.position = 'absolute';
+image3.style.left = '600px';
+slider.appendChild(image1);
+slider.appendChild(image2);
+slider.appendChild(image3);
+document.body.appendChild(slider);
+var currentImage = 1;
+var sliderInterval = setInterval(function() {
+  slider.style.left = '-' + (currentImage * 300) + 'px';
+  currentImage++;
+  if (currentImage > 3) {
+    currentImage = 1;
+  }
+}, 3000);
+    </script>
+</body>
+</html>

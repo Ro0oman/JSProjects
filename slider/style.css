@@ -1,0 +1,32 @@
+#container{
+    overflow: hidden;
+}
+
+#carrusel{ 
+    display: flex;
+    flex-direction: column;
+    height: 60%;
+    width: 60%;
+    margin: auto;
+}
+
+img{
+    width: 100%;
+}
+
+.cajaCarrusel{
+    margin: auto;
+    text-align: center;
+    position: aboslute;
+    width: 60%;
+}
+
+.boton1{
+    position: aboslute;
+}
+
+.boton2{
+    margin-left: 90%;
+    position: aboslute;
+}
+

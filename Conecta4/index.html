@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta4</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="informacion">
+        <p id="info">Bienvenido a Conect4</p>
+        <button onclick="reset()">Reiniciar partida</button>
+
+    </div>
+    <div class="botones">
+        <button class="boton" onclick="tirarFicha(0)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+        <button class="boton" onclick="tirarFicha(1)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+        <button class="boton" onclick="tirarFicha(2)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+        <button class="boton" onclick="tirarFicha(3)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+        <button class="boton" onclick="tirarFicha(4)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+        <button class="boton" onclick="tirarFicha(5)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+        <button class="boton" onclick="tirarFicha(6)"> 
+            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </button>
+    </div>
+
+    <div class="container">
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+        <div class="casilla">
+            <div class="contenido">
+                <p class="textoContenido"></p>
+            </div>
+        </div>
+    </div>
+    <!--
+        Rejilla 7 x 6 (divs con display grid)
+
+        En la rejilla alamacenaré 3 valores 0 = vacio // 1 = ficha jugador 1 // -1 = ficha jugador 2
+
+        Fila/Array 1      0   0   0   0   0   0   0
+        Fila/Array 2      0   0   0   0   0   0   0
+        Fila/Array 3      0   0   0   0   0   0   0
+        Fila/Array 4      0   0   0   0   0   0   0
+        Fila/Array 5      0   0   0   0   0   0   0
+        Fila/Array 6      0   0   0   0   0   0   0
+
+        El jugador elige la columna (posicion del array)
+        El programa chekea en cada array en su posicion (1) y si en la columna/posicion del array 6 hay un 0 se ocupa esa casilla
+
+        Fila/Array 1      0   0   0   0   0   0   0
+        Fila/Array 2      0   0   0   0   0   0   0
+        Fila/Array 3      0   0   0   0   0   0   0
+        Fila/Array 4      1   0   0   0   0   0   0
+        Fila/Array 5      1   0   0   0   0   0   0 
+        Fila/Array 6      1   0   0   0   0   0   0
+
+        7 botones con un onclick=jugar(x), x = el numero de la columna
+
+        jugar(0) -> Recibe x -> Comprueba donde se puede poner -> 
+        ComprobarUbicacion(0);
+            - accede al array 6 = ¿Se puede colocar la pieza? -> No
+            - accede al array 5 = ¿Se puede colocar la pieza? -> No
+            - accede al array 4 = ¿Se puede colocar la pieza? -> No
+            - accede al array 3 = ¿Se puede colocar la pieza? -> Si -> Devuelve true
+
+        posiciona la ficha en el array [2][0]
+        Una vez colocada la ficha se llama comprobarHorizontal();
+            accede a cada array y comprueba cuantos valores 1 y -1 hay
+            array1 ->   0, 0, 0, 0, 0, 0, 0 -> cont1 = 0; // contmenos1 = 0;
+            array2 ->   0, 0, 0, 0, 0, 0, 0 -> cont1 = 0; // contmenos1 = 0;
+            array3 ->   1, 0, 0, 0, 0, 0, 0 -> cont1 = 1; // contmenos1 = 0;
+            array4 ->   1, 0, 0, 0, 0, 0, 0 -> cont1 = 1; // contmenos1 = 0;
+            array5 ->   1, 0, 0, 0, 0, 0, 0 -> cont1 = 1; // contmenos1 = 0;
+            array6 ->   1, 0, 0, 0, 0, 0, 0 -> cont1 = 1; // contmenos1 = 0;
+
+            Si cont1 > 3, la funcion devolveria true y las respectivas posiciones del 4 en raya
+
+        Ya que aun no se ha econtrado la ficha continuamos con la ejecucion normal del codigo, en este caso comprobaremos las
+        diagonales
+
+        Llamamos a comprobarDiagonal();
+        /* Diagonal 1(izquierda a derecha) 
+        let columnas = 4;
+        let filas = 3;
+
+        for (let i = 0; i < filas; i++) {
+            for (let z = 0; z < columnas; z++) {
+                console.log(matrizArrays[i][z]);
+                if(matrizArrays[i][z] !== 0){
+                    if((matrizArrays[i][z] == matrizArrays[i+1][z+1]) && (matrizArrays[i+2][z+2] == matrizArrays[i+3][z+3])){
+                        if(matrizArrays[i][z] == 1){
+                            gana(jugador1);
+                        }else{
+                            gana(jugador2);
+                        }
+                    }
+                }
+            }
+        }
+        */
+        /* Diagonal 2(derecha a izquierda) 
+        let columna2 = 7;
+        let fila2 = 3;
+        for (let i = 0; i < filas; i++) {
+            for (let z = 3; z < columna2; z++) {
+                console.log(matrizArrays[i][z]);
+                if(matrizArrays[i][z] !== 0){
+                    if((matrizArrays[i][z] == matrizArrays[i+1][z-1]) && (matrizArrays[i+2][z-2] == matrizArrays[i+3][z-3])){
+                        if(matrizArrays[i][z] == 1){
+                            gana(jugador1);
+                        }else{
+                            gana(jugador2);
+                        }
+                    }
+                }
+            }
+        }   
+
+        La funcion encontrar diagonal tampoco ha encontrado una concidencia poor lo que llamamos a comprobvarvertical()
+
+        Llamamos a comprobarVertical();
+            La funcion accede a cada posicion de cada array 
+            for (let i = 0; i < 6; i++) {
+                matrizArrays.forEach(element => {
+                    console.log(element[i]);
+                    if(element[i] !== 0){
+                        if(element[i] == 1){
+                            cont1++;
+                            if(cont1 > 3){
+                                gana(jugador1);
+                            }
+                        }else{
+                            contmenos1++;
+                            if(contmenos1 > 3){
+                                gana(jugador2);
+                            }
+                        }
+                    }
+                });
+            }   
+                    
+        Cuando se encuentre una de las combinaciones(horizontal, vertical o diagonal), las funciones de comprobar llamaran
+        a una funcion gana(jugador) y le pasarán el jugador que ha ganado terminando asi la ejecucion y determinando la partida
+        
+        
+        Todos los divs tendrán una clase compartida, entonces a partir de un
+        queryselectorall recibo un objeto de tipo array con todas las cajas, al final
+        tendré una estructura muy parecida al propio array con los valores por lo que
+        mediante una funcion podre recorrer el array y los objetos a la vez e ir 
+        rellenandolos
+
+
+     -->
+
+    <script src="./script.js"></script>
+</body>
+</html>
